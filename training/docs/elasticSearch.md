@@ -1,4 +1,4 @@
-#Elastic search
+# Elastic search
 
 - Elasticsearch is a highly scalable open-source **full-text search** and **analytics engine**.
 - It allows to
@@ -11,7 +11,7 @@
     >  - Price alerting platform (if the customer know the particular item pricing drop in last month)
     >  - To build custom dashboards for business intelligence/analytics.
 
-###Concepts
+### Concepts
 
 - Near Realtime (NRT)
 - **Clustor**
@@ -47,7 +47,7 @@
 
 
 
-###Installation
+### Installation
 
 - Java 8 / 8+ needed.
 
