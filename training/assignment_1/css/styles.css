@@ -1,0 +1,37 @@
+header {
+	height: 60px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	flex-direction: row;
+}
+
+body {
+	font-size: 15px;
+	overflow-x: hidden;
+}
+
+footer {
+	height: 30px;
+}
+
+.headings {
+	color: green;
+}
+
+.dashedLine {
+	border: dashed lightgray 1px
+}
+
+.logoStyle {
+	padding-left: 10px;
+
+}
+.iconSpriteStyle{
+
+}
+.bannerImageStyle{
+	padding-top: 7px;
+	padding-left: 5px;
+	width: 400px;
+	height:"40%";
+}
