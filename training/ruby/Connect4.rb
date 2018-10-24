@@ -1,24 +1,20 @@
-$row = 6;
-$column = 7;
-$board = [];
-$winGame = false;
-$tieGame = false;
-
+#Creating the board
 class Connect4
 
-	def createBoard
-		$row.times do |rowVar|
-			$board[rowVar] = []
-
-			$column.times do
-				$board[rowVar] << '.'
-			end
-		end
-		puts " \n \t-------------------------------------- \n  \tWelcome to connection four - Lets Play \n \t-------------------------------------- \n "
-
+	def welcomeMessage
+		$row = 6;
+		$column = 7;
+		$Player1 = '#';
+		$Player2 = '&';
+		$board = Array.new($row) { Array.new($column ,'.')};
+		$winGame = false;
+		$tieGame = false;
+		puts " \n \t\t-------------------------------------- \n  \t\tWelcome to connection four - Lets Play \n \t\t-------------------------------------- \n "
 	end
-
+	
 	def showBoard
+		print "\t1\t2\t3\t4\t5\t6\t7\n"
+		puts
 		$row.times do |rowVar|
 			print "\t";
 			$column.times do |colVar|
@@ -29,19 +25,130 @@ class Connect4
 		puts	
 	end
 
+	def gameStatus(status,symbol)
+		self.showBoard;
+		if status == 'Win'
+			$winGame=true;
+			if symbol == $Player1
+				puts "************************************************\n";
+				puts "\n\t__________Player 1 Wins___________\n";
+				puts "\n************************************************\n";
+			else
+				puts "************************************************\n";
+				puts "\n\t__________Player 2 Wins___________\n";
+				puts "\n************************************************\n";
+			end
+		else
+			$tieGame=true;
+			puts "************************************************\n";
+			puts "\n\t__________Game Tie____________\n";
+			puts "\n************************************************\n";
+		end
+		puts "Do you want to continue( 0 for yes and 1 for no ) :"
+		reply = gets.to_i;
+		if reply == 0 
+			puts reply;
+			self.welcomeMessage;
+			self.showBoard;
+			Game.new;
+		else
+			exit;
+		end
+	end
+
+end
+
+#For playing game
+class Game
+
+	def initialize
+		@player = true; #FOR FIRST PLAYER
+		@count = 0;
+		@connectObj = Connect4.new;
+		@validationObj = Validation.new;
+		self.choosePlayer; 
+	end
+
+	def choosePlayer
+		until $winGame === true || $tieGame === true
+			if @player == true
+				self.playerInsertion(1,$Player1);
+			else
+				self.playerInsertion(2,$Player2);	
+			end
+		end
+	end
+
+	def playerInsertion(player,symbol)
+		puts "Player #{player} : Enter the column number(1-7) :\t";
+		columnVal = gets.to_i;
+		if 0 < columnVal and columnVal <= 7 
+			check = columnAvailabiltyChecker(columnVal);
+			if check != -1
+				@count=@count+1;
+				self.coinInsertion(check,columnVal-1,symbol);
+				self.togglePlayer;
+			else
+				puts "Column is full choose another column"
+				self.choosePlayer;
+			end
+		else 
+			puts "Enter the correct column number";
+			self.choosePlayer;
+		end
+		@connectObj.showBoard;
+		if @count == $row * $column
+			$tieGame = true;
+			@connectObj.gameStatus('Tie',0);
+		end
+	end
+
+	def togglePlayer #toggling between players
+			@player = !@player;
+	end
+
+	def columnAvailabiltyChecker(column)
+		rowValue = $row - 1;
+		while $board[rowValue][column-1] != '.' && rowValue > -1
+				rowValue = rowValue-1;
+		end
+		if rowValue < 0
+			return -1;
+		else
+			return rowValue;
+		end
+	end
+
+	def coinInsertion(rowValue,column,symbol)
+		$board[rowValue][column] = symbol;
+		# puts "coins inserted #{@count}\n"
+		if @count > 6
+			self.validate(symbol,column,rowValue);
+		end
+	end
+
+	def validate(symbol,column,row)
+		@validationObj.validateRow(row,symbol);
+		@validationObj.validateColumn(column,symbol);
+		@validationObj.validateDiagonal(row,column,symbol);
+	end
+
+end
+
+# validation class
+class Validation
+
+	def initialize
+		@connectObj = Connect4.new;
+	end
 
 	def validateRow(row, symbol)
 		count=0;
-		# puts row.class;
 		$column.times do |col|
-			if $board[row][col-1] == symbol
-				count = count + 1;
-				if count > 3
-					if symbol == '#'
-						self.gameStatus('Win',1);
-					else
-						self.gameStatus('Win',2);
-					end
+			if $board[row][col] == symbol
+				count += 1;
+				if count == 4
+					@connectObj.gameStatus('Win',symbol);
 					break
 				end
 			else
@@ -53,15 +160,10 @@ class Connect4
 	def validateColumn(column,symbol)
 		count=0;
 		$row.times do |row|
-
 			if $board[row][column] == symbol
-				count = count + 1;
-				if count > 3
-					if symbol == '#'
-						self.gameStatus('Win',1);
-					else
-						self.gameStatus('Win',2);
-					end
+				count += 1;
+				if count == 4
+					@connectObj.gameStatus('Win',symbol);
 					break;
 				end
 			else
@@ -100,11 +202,7 @@ class Connect4
 			end
 		end
 		if count==4
-			if symbol == '#'
-				self.gameStatus('Win',1);
-			else
-				self.gameStatus('Win',2);
-			end
+			@connectObj.gameStatus('Win',symbol);
 		end
 	end
 
@@ -133,142 +231,13 @@ class Connect4
 			end
 		end
 		if count==4
-			if symbol == '#'
-				self.gameStatus('Win',1);
-			else
-				self.gameStatus('Win',2);
-			end
+			@connectObj.gameStatus('Win',symbol);
 		end
-	end
-
-	def gameStatus(status,player)
-
-		self.showBoard;
-
-		if player > 0
-			puts "************************************************\n";
-			puts "\n\t__________Player #{player} #{status}___________\n";
-			puts "\n************************************************\n";
-		else
-			puts "************************************************\n";
-			puts "\n\t__________Game #{status}____________\n";
-			puts "************************************************\n";
-		end
-
-		puts "Do you want to continue( 0 for yes and 1 for no ) :"
-		reply = gets.to_i;
-		# puts reply;
-
-		if reply == 0 
-			puts reply;
-			self.createBoard;
-			self.showBoard;
-			Player.new;
-		else
-			exit;
-		end
-	end
-end
-
-
-class Player
-
-	def initialize
-		@player = true; #FOR FIRST PLAYER
-		@count = 0;
-		@connectObj = Connect4.new;
-		self.playerInsertion; 
-	end
-
-	def playerInsertion
-
-		until $winGame === true || $tieGame === true
-			if @player === true
-				
-				puts "Player 1 : Enter the column number(1-7) :\t";
-				columnVal = gets.to_i;
-
-				check = columnAvailabiltyChecker(columnVal);
-				if check != -1
-					if 0 < columnVal and columnVal <= 7 
-						@count=@count+1;
-						self.coinInsertion(check,columnVal-1,'#');
-						self.selectPlayer;
-					else 
-						@count=@count-1;
-						puts "Enter the correct column number";
-						self.playerInsertion;
-					end
-				else 
-					puts "Column is full choose another column"
-					self.playerInsertion;
-				end
-
-			else
-				puts "Player 2 : Enter the column number(1-7) :\t";
-				columnVal = gets.to_i;
-				check = columnAvailabiltyChecker(columnVal);
-
-				if check != -1
-					if 0 < columnVal and columnVal <= 7
-						@count=@count+1;
-						self.coinInsertion(check,columnVal-1,'@');
-						self.selectPlayer;
-						
-					else
-						@count=@count-1;
-						puts "Enter the correct column number";
-						self.playerInsertion;
-					end
-				else 
-					puts "Column is full choose another column"
-					self.playerInsertion;
-				end		
-			end
-			@connectObj.showBoard;
-			if @count == $row * $column
-				$tieGame = true;
-				@connectObj.gameStatus('Tie',0);
-			end
-		end
-	end
-
-	def selectPlayer #toggling between players
-			@player = !@player;
-	end
-
-	def columnAvailabiltyChecker(column)
-		rowValue = $row - 1;
-		while $board[rowValue][column-1] != '.' && rowValue > -1
-				rowValue = rowValue-1;
-		end
-		if rowValue < 0
-			return -1;
-		else
-			return rowValue;
-		end
-	end
-
-	def coinInsertion(rowValue,column, indicator)
-
-		$board[rowValue][column] = indicator;
-
-		puts "coins inserted #{@count}\n"
-		if @count > 6
-			self.validation(indicator, column, rowValue);
-		end
-
-	end
-
-	def validation(symbol,column,row)
-		@connectObj.validateRow(row,symbol);
-		@connectObj.validateColumn(column,symbol);
-		@connectObj.validateDiagonal(row,column,symbol);
 	end
 
 end
 
-connect =Connect4.new;
-connect.createBoard;
+connect = Connect4.new;
+connect.welcomeMessage;
 connect.showBoard;
-$playerObj = Player.new;
+Game.new;
