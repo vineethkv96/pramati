@@ -1,7 +1,7 @@
 header {
 	height: 60px;
 	padding-top: 15px;
-	padding-bottom: 15px;
+	padding-bottom: 20px;
 	flex-direction: row;
 }
 
@@ -23,15 +23,25 @@ footer {
 }
 
 .logoStyle {
-	padding-left: 10px;
-
+	padding-left: 30px;
+	
 }
-.iconSpriteStyle{
 
+.iconSpriteStyle {
+	float: right;
 }
-.bannerImageStyle{
+
+.navigationIcons {
+	padding-right: 40px;
+}
+
+.navigations {
+	float: bottom;
+}
+
+.bannerImageStyle {
 	padding-top: 7px;
 	padding-left: 5px;
 	width: 400px;
-	height:"40%";
+	height: "40%";
 }
