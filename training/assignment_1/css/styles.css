@@ -1,7 +1,7 @@
 header {
-	height: 60px;
-	padding-top: 15px;
-	padding-bottom: 20px;
+	height: 70px;
+	padding-top: 20px;
+	padding-bottom: 50px;
 	flex-direction: row;
 }
 
@@ -10,12 +10,23 @@ body {
 	overflow-x: hidden;
 }
 
+p {
+	font-family: 'Arial';
+	font-size: 16px;
+	color: #5a5b5c;
+
+}
+
 footer {
+	float: right;
 	height: 30px;
+	font-size: 20px;
+	padding-right: 10px;
 }
 
 .headings {
 	color: green;
+	font-size: 26px;
 }
 
 .dashedLine {
@@ -23,8 +34,10 @@ footer {
 }
 
 .logoStyle {
-	padding-left: 30px;
-	
+	padding-top: 14px;
+	padding-left: 34px;
+	height: 140%;
+	width: 14%
 }
 
 .iconSpriteStyle {
@@ -32,16 +45,90 @@ footer {
 }
 
 .navigationIcons {
-	padding-right: 40px;
+	padding-left: 18px;
+	padding-top: 30px;
+	padding-right: 80px;
+	width: 80%;
+	height: 100%;
 }
 
 .navigations {
 	float: bottom;
+	font-size: 24px;
+	font-family: 'Arial'
+}
+
+.homeStyle {
+	padding-right: 20px;
+	border-right: 1px solid black;
+}
+
+.ideaStyle {
+	padding-left: 20px;
+}
+
+.aboutStyle {
+	padding-left: 16px;
+	padding-right: 20px;
+	border-right: 1px solid black;
+}
+
+.bannerImageBordertyle {
+	height: 100%;
+	width: 200%;
+	padding-left: 5px;
 }
 
 .bannerImageStyle {
-	padding-top: 7px;
+	padding-top: 12px;
+	padding-bottom: 10px;
+	width: 100%;
+}
+
+.tableStyle {
+	position: relative;
+	display: table;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.tableLeftStyle {
+	float: left;
+	width: 31%;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-right: 1.7px dashed lightgray;
+}
+
+.tableMidStyle {
+	float: left;
+	width: 31%;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.tableRightStyle {
+	float: left;
+	width: 31%;
 	padding-left: 5px;
-	width: 400px;
-	height: "40%";
+	padding-right: 5px;
+	border: 7px solid #c59e63;
+	background-color: #e7ddcd;
+}
+
+.bulletStyle {
+	padding-top: 10px;
+}
+
+.readMoreStyle {
+	float: right;
+}
+
+.footerNavStyle{
+	padding-left: 20px;
+	padding-right: 20px;
+	border-right: 1.1px solid black;
+}
+.footerIdeaStyle{
+	padding-left: 20px;
 }
