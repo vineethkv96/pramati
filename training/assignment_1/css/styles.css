@@ -27,6 +27,9 @@ footer {
 .headings {
 	color: green;
 	font-size: 26px;
+	margin: 0;
+	padding: 0;
+	padding-top: 5px;
 }
 
 .dashedLine {
@@ -64,7 +67,7 @@ footer {
 }
 
 .ideaStyle {
-	padding-left: 20px;
+	padding-left: 24px;
 }
 
 .aboutStyle {
@@ -88,13 +91,13 @@ footer {
 .tableStyle {
 	position: relative;
 	display: table;
-	padding-top: 10px;
+	padding-top: 5px;
 	padding-bottom: 10px;
 }
 
 .tableLeftStyle {
 	float: left;
-	width: 31%;
+	width: 32%;
 	padding-left: 10px;
 	padding-right: 10px;
 	border-right: 1.7px dashed lightgray;
@@ -102,7 +105,7 @@ footer {
 
 .tableMidStyle {
 	float: left;
-	width: 31%;
+	width: 32%;
 	padding-left: 10px;
 	padding-right: 10px;
 }
