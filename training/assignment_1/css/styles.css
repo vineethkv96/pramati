@@ -1,8 +1,8 @@
 header {
 	height: 70px;
-	padding-top: 20px;
-	padding-bottom: 50px;
+	padding: 20px 0px 50px 0px;
 	flex-direction: row;
+	border-bottom: dashed 1px;
 }
 
 body {
@@ -14,11 +14,10 @@ p {
 	font-family: 'Arial';
 	font-size: 16px;
 	color: #5a5b5c;
-
 }
 
 footer {
-	float: right;
+	border-top: dashed 1px;
 	height: 30px;
 	font-size: 20px;
 	padding-right: 10px;
@@ -28,110 +27,91 @@ footer {
 	color: green;
 	font-size: 26px;
 	margin: 0;
-	padding: 0;
 	padding-top: 5px;
 }
 
-.dashedLine {
-	border: dashed lightgray 1px
+.logo_style {
+	padding: 14px 0px 0px 34px;
+	height: 100px;
+	width: 175px;
 }
 
-.logoStyle {
-	padding-top: 14px;
-	padding-left: 34px;
-	height: 140%;
-	width: 14%
+.navigation_icons_style {
+	padding: 30px 80px 0px 18px;
+	width: 225px;
 }
 
-.iconSpriteStyle {
-	float: right;
-}
-
-.navigationIcons {
-	padding-left: 18px;
-	padding-top: 30px;
-	padding-right: 80px;
-	width: 80%;
-	height: 100%;
-}
-
-.navigations {
+.navigations_style {
 	float: bottom;
 	font-size: 24px;
 	font-family: 'Arial'
 }
 
-.homeStyle {
+.home_style {
 	padding-right: 20px;
 	border-right: 1px solid black;
 }
 
-.ideaStyle {
+.idea_style {
 	padding-left: 24px;
 }
 
-.aboutStyle {
-	padding-left: 16px;
-	padding-right: 20px;
+.about_style {
+	padding: 0px 20px 0px 16px;
 	border-right: 1px solid black;
 }
 
-.bannerImageBordertyle {
-	height: 100%;
-	width: 200%;
-	padding-left: 5px;
+.banner_image_style {
+	padding: 12px 0px 10px 5px;
+	border-bottom: dashed 1px;
+	width: 1325px;
 }
 
-.bannerImageStyle {
-	padding-top: 12px;
-	padding-bottom: 10px;
-	width: 100%;
+.html_css_para_style {
+	border-bottom: dashed 1px;
 }
 
-.tableStyle {
+.table_style {
 	position: relative;
 	display: table;
-	padding-top: 5px;
-	padding-bottom: 10px;
+	padding: 10px 0px 10px 0px;
 }
 
-.tableLeftStyle {
-	float: left;
+.table_left_style {
 	width: 32%;
-	padding-left: 10px;
-	padding-right: 10px;
-	border-right: 1.7px dashed lightgray;
+	padding: 0px 10px 0px 10px;
+	border-right: 1px dashed black;
 }
 
-.tableMidStyle {
-	float: left;
+.table_mid_style {
 	width: 32%;
-	padding-left: 10px;
-	padding-right: 10px;
+	padding: 0px 10px 0px 10px;
 }
 
-.tableRightStyle {
-	float: left;
+.table_right_style {
 	width: 31%;
-	padding-left: 5px;
-	padding-right: 5px;
+	padding: 0px 5px 0px 5px;
 	border: 7px solid #c59e63;
 	background-color: #e7ddcd;
 }
 
-.bulletStyle {
+.bullet_style {
 	padding-top: 10px;
 }
 
-.readMoreStyle {
+.float_right_style {
 	float: right;
 }
 
-.footerNavStyle{
-	padding-left: 20px;
-	padding-right: 20px;
+.float_left_style {
+	float: left;
+}
+
+.footer_nav_style {
+	padding: 0px 20px 0px 20px;
 	border-right: 1.1px solid black;
 }
-.footerIdeaStyle{
+
+.footer_idea_style {
 	padding-left: 20px;
 }
