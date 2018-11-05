@@ -6,6 +6,7 @@
       <div class="alert alert-danger"><%= msg%></div>
     <% end %>
   <%end%>
+
   <p>
     <%= f.label :name %><br>
     <%= f.text_field :name , autofocus: true, autocomplete: "name" %>
@@ -30,6 +31,6 @@
     <%= f.submit "Sign up"%>
   </p>
   <p>
-    Do you already have an account? <%= link_to "Login", user_path %>
+    Do you already have an account? <%= link_to "Login", new_login_path %>
   </p>
 <% end %>
