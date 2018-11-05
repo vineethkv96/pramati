@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gameday</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css' %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <nav class = "navbar navbar-expand-md navbar-dark bg-primary ">
+
+      <a class = "navbar-brand padding_left" href="http://localhost:3000">gameday
+      <%# <img src = "logo_white.png" alt="gameday-logo"/>  %>
+      </a>
+      <button class = "navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class = "navbar-toggler-icon"></span>
+      </button>
+
+      <div class = " navbar-collapse" id="navbarsExampleDefault">
+        <ul class = "navbar-nav ">
+          <li class="nav-item login_style">
+             <%= link_to 'Login', user_path, class: "btn btn-outline-dark" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to 'sign up', new_user_path, class: "btn btn-outline-dark" %>
+            </div>
+          </li>
+        </ul>
+
+        <%# <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form> %>
+
+      </div>
+    </nav> 
+
+    <div class = "mt-4 container">
+      <%= yield %>
+    </div>
+  </body>
+</html>

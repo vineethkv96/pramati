@@ -1,0 +1,17 @@
+<h1>Login</h1>
+<%= form_for :login, url: user_index_path do |f| %>
+  <p>
+    <%= f.label :email %><br>
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", email: true %>
+  </p>
+  <p>
+    <%= f.label :password %><br>
+    <%= f.password_field :password, autocomplete: "new-password" %>
+  </p>
+  <p>
+    <%= f.submit "Login"%>
+  </p>
+  <p>
+    Not a part of Gameday Community? <%= link_to "Create an account", new_user_path %>
+  </p>
+<% end %>

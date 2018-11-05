@@ -1,6 +1,27 @@
-<h1>Find Play</h1>
+<!DOCTYPE html>
+<html>
 
+<title>Find Play . in </title>
 <header>
-
+  <h1>Find Play</h1>
+  <div class="sign_in_style">
+  <div>
+    <%= link_to "sign in", user_session_path %>
+  </div>
+  <div>
+    <%= link_to "sign up", new_user_registration_path %>
+  </div>
+  </div>
 </header>
-<p>Find me in app/views/store/index.html.erb</p>
+
+<body>
+Find your time to play! 
+</body>
+<footer>
+  <div>
+    <%= link_to "sign out", destroy_user_session_path %>
+  </div>
+</footer>
+
+</html>
+<%# <p>Find me in app/views/store/index.html.erb</p> %>
