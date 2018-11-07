@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
   
-  # get "user/index"
   root "user#index"
   # post "user" => "user#login"
   # get "login" => "login"
