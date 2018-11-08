@@ -32,8 +32,9 @@ class LoginController < ApplicationController
     redirect_to root_path, :notice => "Log out successfully"
   end
 
-  private def login_parameter
-    params.require(:login).permit(:email, :password)
-  end
+  private 
+    def login_parameter
+      params.require(:login).permit(:email, :password)
+    end
 
 end
