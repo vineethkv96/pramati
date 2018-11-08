@@ -1,6 +1,23 @@
-<h3>Login successfully</h3>
 
-<h4>Username: <%= @login.name %></h4>
+<h5>Username: <%= @login.name %></h5>
 
+<h4>Choose interest sports</h4>
+<form>
+<div class="form-row">
+  <div class="form-group">
+    <select class="form-control" id="sel1" name="option">
+      <% $games.each do |game|%>
+        <option name="<%= game.id %>"><%= game.name %></option>
+      <% end %>
+    </select>
+  </div>
+  <div class="col-12 col-md-3">
+    <button type="submit" href = "/game/index/" class="btn btn-block btn-primary">Add</button>
+  </div>
+  <%# <div>
+    <%= link_to "Add", game_index_path %>
+  <%# </div> %>
+</div>
+</form>
 <%# <%<p><%= link_to 'Logout', login_path, method: :delete, data: { confirm: 'Are you sure?' } %>
  

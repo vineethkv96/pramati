@@ -17,18 +17,19 @@ class LoginController < ApplicationController
     if login
       if login.password === login_parameter[:password]
         log_in login
-        redirect_to login_path(login)
+        redirect_to login_path(login), :notice => "Login successfully"
       end
     else
       if @login.valid?
       end
+      #flash.now.alert = "Invalid email or password"
       render 'new'
     end
   end
 
   def destroy
     log_out
-    redirect_to root_path
+    redirect_to root_path, :notice => "Log out successfully"
   end
 
   private def login_parameter

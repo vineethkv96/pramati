@@ -14,14 +14,18 @@
  *= require_self
  */
 
+
  .float_right_style{
    float: right;
  }
  .padding_left{
    padding-left: 50px;
  }
+ .padding_right_10{
+   padding-right: 10px;
+ }
 .login_style{
-  padding: 0px 10px 0px 1000px;
+  padding: 0px 10px 0px 900px;
 }
 .logout_style{
   padding-left: 1050px;

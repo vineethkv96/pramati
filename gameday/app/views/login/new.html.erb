@@ -2,9 +2,11 @@
 <%= form_for :login, url: login_index_path do |f| %>
 
    <% if @login.errors.any? %>
-    <% @login.errors.full_messages.each do |msg|%>
-      <p class="alert alert-danger"><%= msg%></p>
-    <% end %>
+    <%# <% binding.pry %>
+    <%# <% @login.errors.full_messages.each do |msg|%>
+      <p class="alert alert-danger"><%= @login.errors.full_messages[2]%></p>
+      <p class="alert alert-danger"><%= @login.errors.full_messages.last%></p>
+    <%# <% end %> 
   <%end%>
 
   <p>
