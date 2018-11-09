@@ -2,10 +2,11 @@
 <h5>Username: <%= @login.name %></h5>
 
 <h4>Choose interest sports</h4>
-
-<% @login.errors.full_messages.each do |msg|%>
-  <div class="alert alert-danger"> <%= msg%> </div>
-<% end %>
+<% if @login.errors.any? %>
+  <% @login.errors.full_messages.each do |msg|%>
+    <div class="alert alert-danger"> <%= msg%> </div>
+  <% end %>
+<%end%>
 
 <form action="/interests"  method="post">
   <div class="form-row">

@@ -2,7 +2,6 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap 4 DatePicker</title>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/gijgo@1.9.10/js/gijgo.min.js" type="text/javascript"></script>
@@ -20,18 +19,18 @@
         <h4 class="mb-5"> Book slots in 200+ facilities on a pay-per-session basis.</h4>
       </div>
       <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
-        <form>
-
+      
+        <form action="/games" method="post">
           <div class="form-row">
             <div class="form-group">
-              <select class="form-control" id="sel1" name="sellist1">
+              <select class="form-control" id="sel1" name="option">
                 <% $games.each do |game|%>
                 <option><%= game.name %></option>
                 <% end %>
               </select>
             </div>
             <div>
-              <input id="datepicker" width="276" />
+              <input id="datepicker" width="276" name="date_data" />
               <script>
                   $('#datepicker').datepicker({
                       uiLibrary: 'bootstrap4'

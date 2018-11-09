@@ -1,0 +1,29 @@
+<h2> Search result </h2>
+
+<h4> <%= params[:type]%> users on <%= params[:date]%> </h4>
+
+<div>
+  <% if params[:userdata].nil?%>
+    <p> No results found </p>
+  <% else %>
+    <table class="table_style">
+      <tr>
+        <th>Name</th>
+        <th>Email</th> 
+        <th>Phone number</th>
+      </tr>
+      <% params[:userdata].each  do |user_id| %>
+        <% user = User.find_by id: user_id.to_i%>
+        <tr>
+          <td><%= user.name %></td>
+          <td><%= user.email%></td> 
+          <td><%= user.phone_number%></td>
+        </tr>
+      <% end %>
+    </table>
+  <%end%>
+ 
+</div>
+
+
+
