@@ -1,0 +1,48 @@
+<h1>Adding stadiums</h1>
+<%= form_for :stadium, url: stadiums_path do |f| %>
+
+  <% if @stadium.errors.any? %>
+    <% @stadium.errors.full_messages.each do |msg|%>
+      <div class="alert alert-danger"> <%= msg%> </div>
+    <% end %>
+  <%end%>
+
+  <p>
+    <%= f.label :name %><br>
+    <%= f.text_field :name , autofocus: true, autocomplete: "name" %>
+  </p>
+
+  <p>
+    <%= f.label :address%><br>
+    <%= f.text_area :address, autofocus: true %>
+  </p>
+
+  <p>
+    <%= f.label :contact_number %><br>
+    <%= f.text_field :contact_number %>
+  </p>
+
+  <p>
+    <%= f.label :game %><br>
+      <select class="form-control" id="sel1" name="stadium[game]" >
+        <% $games.each do |game|%>
+          <option name="<%= game.id %>"><%= game.name %></option>
+        <% end %>
+      </select>
+  </p>
+
+  <p>
+    <%= f.label :price_for_hour%><br>
+    <%= f.text_field :price_for_hour, autofocus: true %>
+  </p>
+  
+  <p>
+    <%= f.label :description %><br>
+    <%= f.text_area :description, autofocus: true %>
+  </p>
+
+  <p>
+    <%= f.submit "ADD"%>
+  </p>
+
+<% end %>

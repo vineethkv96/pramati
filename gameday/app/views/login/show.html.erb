@@ -15,15 +15,16 @@
         <% $games.each do |game|%>
           <option name="<%= game.id %>"><%= game.name %></option>
         <% end %>
-    </select>
+      </select>
     </div>
     <div class="col-12 col-md-3">
       <button type="submit" class="btn btn-block btn-primary">Add</button>
     </div>
-  <%# <div>
-    <%= link_to "Add", game_index_path %>
-  <%# </div> %>
+
   </div>
 </form>
 <%# <%<p><%= link_to 'Logout', login_path, method: :delete, data: { confirm: 'Are you sure?' } %>
+<p>
+  <%= link_to 'Stadium Adding', new_stadium_path %>
+</p>
  

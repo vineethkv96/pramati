@@ -3,6 +3,7 @@ class GamesController < ApplicationController
 
   def index
     $games = Game.all
+    $stadiums = Stadium.all
   end
 
   def show
