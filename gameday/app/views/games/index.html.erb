@@ -67,13 +67,12 @@
 									<img src="https://5.imimg.com/data5/TM/PR/MY-1515609/badminton-court-28-indoor-29-500x500.jpg" class="img-responsive img-fluid" alt="">
 								</div>
 								<div class="thumb-content">
-									<h5><%= stadium.name%></h5>
+									<h5><%=link_to stadium.name,stadium_path(stadium.id) %></h5>
 									<p class="item-price"> <span>Rs. <%= stadium.price_for_hour%></span></p>
                   <ul class="list-inline">
                     <li class="list-inline-item"><i class="btn-sm btn-danger disabled"><%= stadium.game %></i></li><br/>
                     <li class="list-inline-item"><%= stadium.address %></li>
                   </ul>
-                  <a href="/stadiums/<%= stadium.id %>" class="btn btn-primary">View Slot</a>
 								</div>						
 							</div>
 						</div>

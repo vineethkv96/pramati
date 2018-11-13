@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(version: 2018_11_12_184339) do
     t.string "is_paid"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["user_id", "stadium_id"], name: "index_bookings_on_user_id_and_stadium_id"
   end
 
   create_table "games", force: :cascade do |t|
