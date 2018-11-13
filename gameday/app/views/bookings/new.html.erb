@@ -1,0 +1,67 @@
+<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mb30 text-center">
+  <h2>Stadium Reservation Booking</h2>
+</div>
+
+<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mb30">
+  <div class="tour-booking-form">
+    <form action="/bookings" method="post">
+      <div class="row">     
+
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+          <div class="form-group">
+            <label class="control-label" for="name">Stadium name</label>
+            <p><b><%= $selected_stadium.name %></b></p>
+          </div>
+        </div>
+
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+          <div class="form-group">
+            <label class="control-label"> Address</label>
+            <p><b><%= $selected_stadium.address %></b></p>
+          </div>
+        </div>
+
+        <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+          <div class="form-group">
+            <label class="control-label" for="phone"> Phone</label>
+            <p><b><%= $selected_stadium.contact_number %></b></p>
+          </div>
+        </div>
+        
+        <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+          <div class="form-group">
+            <label class="control-label" for="phone"> Price </label>
+            <p><b>Rs.<%= $selected_stadium.price_for_hour %></b></p>
+          </div>
+        </div>
+
+        <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+          <div class="form-group">
+            <% time_slot = Timeslot.all %>
+            <label class="control-label" for="country">Choose time slot</label>
+            <select class="form-control" name="time_option">
+              <% time_slot.each do |val|%>
+              <option><%= val.time_slot %></option>
+              <% end %>
+            </select>
+          </div>
+        </div>
+
+         <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+          <div class="form-group">
+            <label class="control-label" for="country">Payment method</label>
+            <select class="form-control" name="payment_option">
+              <option> <b>Cash </b></option>
+              <option><b>Debit Card </b></option>
+              <option><b>Credit Card </b></option>
+            </select>
+          </div>
+        </div>
+
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 text-center ">
+            <button type="submit" class="btn btn-primary "> Pay </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
