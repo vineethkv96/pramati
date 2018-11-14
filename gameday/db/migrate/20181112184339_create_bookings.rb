@@ -12,5 +12,6 @@ class CreateBookings < ActiveRecord::Migration[5.2]
     end
     
     add_index :bookings, [:user_id, :stadium_id]
+    add_index :bookings, [:booking_date, :time_slot]
   end
 end

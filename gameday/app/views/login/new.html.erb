@@ -8,7 +8,6 @@
       <p class="alert alert-danger"><%= @login.errors.full_messages.last%></p>
     <%# <% end %> 
   <%end%>
-
   <p>
     <%= f.label :email %><br>
     <%= f.email_field :email, autofocus: true, autocomplete: "email", email: true %>
