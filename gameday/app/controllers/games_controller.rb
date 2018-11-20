@@ -13,8 +13,8 @@ class GamesController < ApplicationController
   def create
 
     if params[:date_data].empty?
-      flash.new[:success] = "Select any date"
-      # render 'new', :alert => 'Select date'
+      flash.now[:success] = "Select any date"
+      redirect_to games_path
     else
       @user_data = []
       date = params[:date_data]

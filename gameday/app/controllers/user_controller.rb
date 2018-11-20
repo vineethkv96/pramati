@@ -38,7 +38,7 @@ class UserController < ApplicationController
     #   end
     # end
     update_account
-    flash[:notice] = 'User was successfully updated..'
+    flash.now[:notice] = 'User was successfully updated..'
     redirect_to root_path
   end
 
