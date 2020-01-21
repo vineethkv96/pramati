@@ -15,3 +15,9 @@
 - Using
   - require 'rmagick'
   - include Magick
+
+
+### IF multi layerd image found
+
+- Rmagick throw error instead of using rmagick use directly ImageMagick system command
+- 'convert example.tif new.png'
