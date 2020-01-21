@@ -10,8 +10,8 @@
   
 #### Conversion
 - Prerequesties 
--- Imagemagick for ubuntu : 'sudo apt-get install libmagickwand-dev'
--- install gem rmagick : 'gem install rmagick'
+  - Imagemagick for ubuntu : 'sudo apt-get install libmagickwand-dev'
+  - install gem rmagick : 'gem install rmagick'
 - Using
--- require 'rmagick'
--- include Magick
+  - require 'rmagick'
+  - include Magick
