@@ -1,0 +1,179 @@
+[
+  {
+    "claim_text": "<claim-text>1. A light emitting panel assembly comprising:<claim-text>a light emitting panel member comprising a first major surface, a second major surface opposite the first major surface, and a light transition area that is an integral extension of the light emitting panel member at an end thereof;</claim-text><claim-text>an optical film or sheet overlying the first major surface; and</claim-text><claim-text>LED light sources optically coupled to the light transition area such that light emitted from the LED light sources is mixed and transmitted by the light transition area to the light emitting panel member as a whole, wherein:</claim-text><claim-text>the light emitting panel member has a pattern of light extracting deformities on or in at least one of the major surfaces, the light extracting deformities are configured to cause light to be emitted from the first major surface with a predetermined light ray angle distribution; and</claim-text><claim-text>the light transition area has faceted refractive surfaces associated with each LED light source that redirect the light entering the light emitting panel member; and</claim-text><claim-text>wherein there is a pattern of light extracting deformities on or in the first major surface and the second major surface, the light extracting deformities on or in the first major surface being different from the light extracting deformities on or in the second major surface.</claim-text></claim-text>",
+    "claim_num": "1",
+    "word_count": 207,
+    "depends_on": [
+
+    ],
+    "ifi_claim_num": 1,
+    "dependent_claims": [
+      {
+        "claim_text": "<claim-text>2. A display device comprising the light emitting panel assembly of <claim-ref idref=\"CLM-00001\">claim 1</claim-ref> and a liquid crystal display panel.</claim-text>",
+        "claim_num": "2",
+        "word_count": 19,
+        "depends_on": [
+          "1"
+        ],
+        "ifi_claim_num": 2
+      },
+      {
+        "claim_text": "<claim-text>3. The light emitting panel assembly of <claim-ref idref=\"CLM-00001\">claim 1</claim-ref> wherein the pattern of light extracting deformities comprises individual optical elements.</claim-text>",
+        "claim_num": "3",
+        "word_count": 20,
+        "depends_on": [
+          "1"
+        ],
+        "ifi_claim_num": 3
+      },
+      {
+        "claim_text": "<claim-text>4. The light emitting panel assembly of <claim-ref idref=\"CLM-00001\">claim 1</claim-ref>, additionally comprising a tray that holds the light emitting panel member and the LED light sources, the tray having a reflective surface that reflects light that would otherwise escape from the light emitting panel member.</claim-text>",
+        "claim_num": "4",
+        "word_count": 44,
+        "depends_on": [
+          "1"
+        ],
+        "ifi_claim_num": 4
+      },
+      {
+        "claim_text": "<claim-text>5. The light emitting panel assembly of <claim-ref idref=\"CLM-00001\">claim 1</claim-ref>, wherein the pattern of light extracting deformities varies randomly.</claim-text>",
+        "claim_num": "5",
+        "word_count": 18,
+        "depends_on": [
+          "1"
+        ],
+        "ifi_claim_num": 5
+      },
+      {
+        "claim_text": "<claim-text>6. The light emitting panel assembly of <claim-ref idref=\"CLM-00001\">claim 1</claim-ref>, wherein the pattern of light extracting deformities varies along the length and width of the light emitting panel member.</claim-text>",
+        "claim_num": "6",
+        "word_count": 28,
+        "depends_on": [
+          "1"
+        ],
+        "ifi_claim_num": 6
+      },
+      {
+        "claim_text": "<claim-text>7. The light emitting panel assembly of <claim-ref idref=\"CLM-00001\">claim 1</claim-ref>, wherein the light extracting deformities are prismatic or lenticular.</claim-text>",
+        "claim_num": "7",
+        "word_count": 18,
+        "depends_on": [
+          "1"
+        ],
+        "ifi_claim_num": 7
+      },
+      {
+        "claim_text": "<claim-text>8. The light emitting panel assembly of <claim-ref idref=\"CLM-00001\">claim 1</claim-ref>, wherein the pattern of light extracting deformities is a coating.</claim-text>",
+        "claim_num": "8",
+        "word_count": 19,
+        "depends_on": [
+          "1"
+        ],
+        "ifi_claim_num": 8
+      },
+      {
+        "claim_text": "<claim-text>9. The light emitting panel assembly of <claim-ref idref=\"CLM-00001\">claim 1</claim-ref>, wherein the light extracting deformities vary in at least one of the following characteristics: shape, depth, height, density, opaqueness, size, slope angle, and orientation.</claim-text>",
+        "claim_num": "9",
+        "word_count": 33,
+        "depends_on": [
+          "1"
+        ],
+        "ifi_claim_num": 9
+      }
+    ]
+  },
+  {
+    "claim_text": "<claim-text>10. A light emitting panel assembly comprising:<claim-text>a light emitting panel member comprising a first major surface, a second major surface opposite the first major surface, and a light transition area that is an integral extension of the light emitting panel member at an end thereof;</claim-text><claim-text>an optical film or sheet overlying the first major surface; and</claim-text><claim-text>LED light sources optically coupled to the light transition area such that light emitted from the LED light sources is mixed and transmitted by the light transition area to the light emitting panel member as a whole, wherein:</claim-text><claim-text>the light emitting panel member has a pattern of light extracting deformities on or in at least one of the major surfaces, the light extracting deformities are configured to cause light to be emitted from the first major surface with a predetermined light ray angle distribution; and</claim-text><claim-text>the light transition area has faceted refractive surfaces associated with each LED light source that redirect the light entering the light emitting panel member; and</claim-text><claim-text>wherein the pattern of light extracting deformities varies in refractive index.</claim-text></claim-text>",
+    "claim_num": "10",
+    "word_count": 172,
+    "depends_on": [
+
+    ],
+    "ifi_claim_num": 10
+  },
+  {
+    "claim_text": "<claim-text>11. A light emitting panel assembly comprising:<claim-text>a light emitting panel member comprising a first major surface, a second major surface opposite the first major surface, and a light transition area that is an integral extension of the light emitting panel member at an end thereof;</claim-text><claim-text>an optical film or sheet overlying the first major surface; and</claim-text><claim-text>LED light sources optically coupled to the light transition area such that light emitted from the LED light sources is mixed and transmitted by the light transition area to the light emitting panel member as a whole, wherein:</claim-text><claim-text>the light emitting panel member has a pattern of light extracting deformities on or in at least one of the major surfaces, the light extracting deformities are configured to cause light to be emitted from the first major surface with a predetermined light ray angle distribution; and</claim-text><claim-text>the light transition area has faceted refractive surfaces associated with each LED light source that redirect the light entering the light emitting panel member; and</claim-text><claim-text>wherein there is an air gap between the light emitting panel member and the film or sheet, the film or sheet having a pattern of deformities on one side of the film or sheet, the deformities on the film or sheet having a width and length that is quite small in relation to a width and length of the film or sheet, the deformities on the film or sheet vary at different locations on the film or sheet to direct the light emitted by the first major surface of the light emitting panel member in different directions to produce a desired light output distribution.</claim-text></claim-text>",
+    "claim_num": "11",
+    "word_count": 265,
+    "depends_on": [
+
+    ],
+    "ifi_claim_num": 11,
+    "dependent_claims": [
+      {
+        "claim_text": "<claim-text>12. The light emitting panel assembly of <claim-ref idref=\"CLM-00011\">claim 11</claim-ref>, wherein the deformities on the film or sheet vary in refractive index at different locations.</claim-text>",
+        "claim_num": "12",
+        "word_count": 24,
+        "depends_on": [
+          "11"
+        ],
+        "ifi_claim_num": 12
+      },
+      {
+        "claim_text": "<claim-text>13. The light emitting panel assembly of <claim-ref idref=\"CLM-00011\">claim 11</claim-ref>, wherein the film or sheet comprises multiple layers.</claim-text>",
+        "claim_num": "13",
+        "word_count": 17,
+        "depends_on": [
+          "11"
+        ],
+        "ifi_claim_num": 13
+      },
+      {
+        "claim_text": "<claim-text>14. The light emitting panel assembly of <claim-ref idref=\"CLM-00011\">claim 11</claim-ref>, wherein the film or sheet comprises multiple materials.</claim-text>",
+        "claim_num": "14",
+        "word_count": 17,
+        "depends_on": [
+          "11"
+        ],
+        "ifi_claim_num": 14
+      }
+    ]
+  },
+  {
+    "claim_text": "<claim-text>15. A light emitting panel assembly comprising:<claim-text>a light emitting panel member comprising a first major surface, a second major surface opposite the first major surface, and a light transition area that is an integral extension of the light emitting panel member at an end thereof;</claim-text><claim-text>an optical film or sheet overlying the first major surface; and</claim-text><claim-text>LED light sources optically coupled to the light transition area such that light emitted from the LED light sources is mixed and transmitted by the light transition area to the light emitting panel member as a whole, wherein:</claim-text><claim-text>the light emitting panel member has a pattern of light extracting deformities on or in at least one of the major surfaces, the light extracting deformities are configured to cause light to be emitted from the first major surface with a predetermined light ray angle distribution; and</claim-text><claim-text>the light transition area has faceted refractive surfaces associated with each LED light source that redirect the light entering the light emitting panel member; and</claim-text><claim-text>wherein the LED light sources are configured to generate light having an output distribution defined by a greater width component than height component, the height component of the LED light sources corresponding to a thickness direction of the light emitting panel member.</claim-text></claim-text>",
+    "claim_num": "15",
+    "word_count": 203,
+    "depends_on": [
+
+    ],
+    "ifi_claim_num": 15,
+    "dependent_claims": [
+      {
+        "claim_text": "<claim-text>16. The light emitting panel assembly of <claim-ref idref=\"CLM-00015\">claim 15</claim-ref>, wherein the LED light sources are embedded in, potted in, or bonded to the light transition area so as to eliminate any air interface between the LED light sources and the light transition area.</claim-text>",
+        "claim_num": "16",
+        "word_count": 43,
+        "depends_on": [
+          "15"
+        ],
+        "ifi_claim_num": 16
+      },
+      {
+        "claim_text": "<claim-text>17. The light emitting panel assembly of <claim-ref idref=\"CLM-00015\">claim 15</claim-ref>, wherein the LED light sources are mounted in a recess, slot, or cavity in the light transition area, the recess, slot, or cavity being filled with a transparent medium to eliminate air interface.</claim-text>",
+        "claim_num": "17",
+        "word_count": 42,
+        "depends_on": [
+          "15"
+        ],
+        "ifi_claim_num": 17
+      },
+      {
+        "claim_text": "<claim-text>18. The light emitting panel assembly of <claim-ref idref=\"CLM-00015\">claim 15</claim-ref>, wherein the LED light sources emit focused light.</claim-text>",
+        "claim_num": "18",
+        "word_count": 17,
+        "depends_on": [
+          "15"
+        ],
+        "ifi_claim_num": 18
+      },
+      {
+        "claim_text": "<claim-text>19. The light emitting panel assembly of <claim-ref idref=\"CLM-00015\">claim 15</claim-ref>, wherein the LED light sources are different colored LEDs.</claim-text>",
+        "claim_num": "19",
+        "word_count": 18,
+        "depends_on": [
+          "15"
+        ],
+        "ifi_claim_num": 19
+      }
+    ]
+  }
+]

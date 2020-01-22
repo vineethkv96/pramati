@@ -1,0 +1,167 @@
+[
+  {
+    "claim_num": "1",
+    "claim_text": "<claim-text>Holder (<figref>2</figref>) for the releasable fastening of a flat approximately rectangular device such as a tablet - computer or a smartphone on a component, in particular on a component of a motor vehicle, with a mounting element. (<figref>4</figref>) for receiving of the device, with a fastening element (<figref>16</figref>) to attach the retainer (<figref>2</figref>) at the component and with a between the fastening element (<figref>16</figref>) and the holding element (<figref>4</figref>) support element provided (<figref>8</figref>), <b>characterized by the,</b> that the support element (<figref>8</figref>) a coupling element (<figref>24</figref>) for the detachable arrangement of an additional element (<figref>32</figref>, <figref>62</figref>, <figref>68</figref>), in particular a power bank, a pocket or a bag, on the coupling element (<figref>24</figref>) having. </claim-text>",
+    "depends_on": [
+
+    ],
+    "word_count": 112,
+    "dependent_claims": [
+      {
+        "claim_num": "2",
+        "claim_text": "<claim-text>Holder (<figref>2</figref>) according to claim 1, <b>characterized by the,</b> that the coupling element (<figref>24</figref>) an attachment section. (<figref>28</figref>) for the arrangement of the additional element thereon. </claim-text>",
+        "depends_on": [
+          "1"
+        ],
+        "word_count": 26
+      },
+      {
+        "claim_num": "3",
+        "claim_text": "<claim-text>Holder (<figref>2</figref>) according to claim 2, <b>characterized by the,</b> that the fastening portion (<figref>28</figref>) at least one recess, in particular a key hole, for the detachable arrangement of the additional element (<figref>32</figref>, <figref>62</figref>, <figref>68</figref>) at the coupling element (<figref>24</figref>) having.</claim-text>",
+        "depends_on": [
+          "2"
+        ],
+        "word_count": 40
+      },
+      {
+        "claim_num": "4",
+        "claim_text": "<claim-text>Holder (<figref>2</figref>) according to any one of claims 2 or 3, <b>characterized by the,</b> that the support element (<figref>8</figref>) a first side (<figref>9</figref>) and one of the first side (<figref>9</figref>) second side facing away from (<figref>14</figref>) , wherein the first side (<figref>9</figref>) a receiving device (<figref>12</figref>) for the detachable arrangement of the holding element (<figref>4</figref>) on the carrier element (<figref>8</figref>) , and wherein the coupling element (<figref>24</figref>) at least in sections to the second side (<figref>14</figref>) is arranged and on this side of the fastening section (<figref>28</figref>) having.</claim-text>",
+        "depends_on": [
+          "2",
+          "3"
+        ],
+        "word_count": 88
+      },
+      {
+        "claim_num": "5",
+        "claim_text": "<claim-text>Holder (<figref>2</figref>) according to any one of the preceding claims, <b>characterized by the,</b> that the coupling element (<figref>24</figref>) on the carrier element (<figref>8</figref>) is slipped on.</claim-text>",
+        "depends_on": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "word_count": 26
+      },
+      {
+        "claim_num": "6",
+        "claim_text": "<claim-text>Holder (<figref>2</figref>) according to claims 4 and 5, <b>characterized by the,</b> that the take-up device (<figref>12</figref>) as a recess is formed, and that the coupling element (<figref>24</figref>) a recess opening (<figref>26</figref>) so that the receiving means. (<figref>12</figref>) is exposed.</claim-text>",
+        "depends_on": [
+          "4",
+          "5"
+        ],
+        "word_count": 39
+      },
+      {
+        "claim_num": "7",
+        "claim_text": "<claim-text>Holder (<figref>2</figref>) according to claim 6, <b>characterized by the,</b> in that the holding element (<figref>4</figref>) an insertion section (<figref>10</figref>) for insertion into the receiving means. (<figref>12</figref>) , wherein the insertion section (<figref>10</figref>) is designed in such a way that this also the coupling element (<figref>24</figref>) in captive manner on the carrier element (<figref>8</figref>) holds.</claim-text>",
+        "depends_on": [
+          "6"
+        ],
+        "word_count": 54
+      },
+      {
+        "claim_num": "8",
+        "claim_text": "<claim-text>Holder (<figref>2</figref>) according to any one of the preceding claims, <b>characterized by the,</b> that the coupling element (<figref>24</figref>) a protruding projection (<figref>30</figref>) for lose - and / or secure the position of an additional element arranged thereon (<figref>32</figref>, <figref>62</figref>, <figref>68</figref>) and / or of an additional part is arranged in or on the additional element (<figref>48</figref>), in particular a power bank.</claim-text>",
+        "depends_on": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7"
+        ],
+        "word_count": 61
+      },
+      {
+        "claim_num": "9",
+        "claim_text": "<claim-text>Holder (<figref>2</figref>) according to any one of the preceding claims, <b>characterized by the,</b> that on the coupling element (<figref>24</figref>) as an additional element (<figref>32</figref>) a receiving surface is arranged, wherein the receiving surface can be bent in such a way that an additional part (<figref>48</figref>), in particular a power bank, lose - and / or is held securely in the can be arranged therein.</claim-text>",
+        "depends_on": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8"
+        ],
+        "word_count": 64
+      },
+      {
+        "claim_num": "10",
+        "claim_text": "<claim-text>Holder (<figref>2</figref>) according to claim 9, <b>characterized by the,</b> that the receiving surface (<figref>32</figref>) two bending portions (<figref>34</figref>, <figref>36</figref>) in each case with at least one film hinge. (<figref>40</figref>, <figref>42</figref>, <figref>44</figref>, <figref>46</figref>) having.</claim-text>",
+        "depends_on": [
+          "9"
+        ],
+        "word_count": 33
+      },
+      {
+        "claim_num": "11",
+        "claim_text": "<claim-text>Holder (<figref>2</figref>) according to claim 10, <b>characterized by the,</b> that the bending portions (<figref>34</figref>, <figref>36</figref>) by means of a securing means (<figref>56</figref>, <figref>60</figref>) for loss-proof holding an additional part (<figref>48</figref>), in particular a power bank, in the curved receiving surface (<figref>32</figref>) , can be tensioned against one another are. </claim-text>",
+        "depends_on": [
+          "10"
+        ],
+        "word_count": 49
+      },
+      {
+        "claim_num": "12",
+        "claim_text": "<claim-text>Holder (<figref>2</figref>) according to claims 8 and 11, <b>characterized by the,</b> that the unbent receiving surface (<figref>32</figref>) substantially perpendicularly to the projection (<figref>30</figref>) and that the securing means (<figref>56</figref>) the the projection (<figref>30</figref>) opposite side covers at least in sections, if the receiving surface (<figref>32</figref>) is bent, so that the additional part (<figref>48</figref>) in the receiving surface (<figref>32</figref>) arranged in a captive manner can be arranged or.</claim-text>",
+        "depends_on": [
+          "11",
+          "8"
+        ],
+        "word_count": 67
+      },
+      {
+        "claim_num": "13",
+        "claim_text": "<claim-text>Holder (<figref>2</figref>) according to any one of the preceding claims, <b>characterized by the,</b> that the additional element than at the coupling element (<figref>24</figref>) pocket positioned (<figref>62</figref>) or bag (<figref>68</figref>) is formed, whereby an additional part (<figref>48</figref>), in particular a power bank, in the pocket (<figref>62</figref>) or the bag (<figref>68</figref>) arranged in a form-locking manner can be arranged or.</claim-text>",
+        "depends_on": [
+          "1",
+          "10",
+          "11",
+          "12",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9"
+        ],
+        "word_count": 58
+      },
+      {
+        "claim_num": "14",
+        "claim_text": "<claim-text>Holder (<figref>2</figref>) according to claim 13, <b>characterized by the,</b> that the pocket (<figref>62</figref>) or the bag (<figref>68</figref>) at least in sections, is elastic and / or that an elastically flexible holding part in the pocket (<figref>62</figref>) or the bag (<figref>68</figref>) for fixing the position of the additional part (<figref>48</figref>) is provided.</claim-text>",
+        "depends_on": [
+          "13"
+        ],
+        "word_count": 51
+      },
+      {
+        "claim_num": "15",
+        "claim_text": "<claim-text>Coupling element (<figref>24</figref>) and / or additional element (<figref>32</figref>, <figref>62</figref>, <figref>68</figref>) for a holder (<figref>2</figref>) according to any one of the preceding claims. </claim-text>",
+        "depends_on": [
+          "1",
+          "10",
+          "11",
+          "12",
+          "13",
+          "14",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9"
+        ],
+        "word_count": 23
+      }
+    ]
+  }
+]
